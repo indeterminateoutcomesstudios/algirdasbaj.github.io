@@ -79,6 +79,8 @@ function readFile(){
             card2 = card2.replace(/\s+/g, '');
             card2 = card2.replace('\'','');
             card2 = card2.replace('_','');
+			card2 = card2.replace('1','');
+			card2 = card2.replace('+','');
             var imgNode = document.createElement("img");
             imgNode.src = 'images/cards/' + card2 + ".png";
             imgNode.width = 280;
