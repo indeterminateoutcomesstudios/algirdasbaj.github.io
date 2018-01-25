@@ -90,6 +90,15 @@ function readFile(){
             if(rowCounter == 4){document.getElementById("statistics").innerHTML += "<br>"; rowCounter = 0;}
             else{rowCounter += 1;}
         }
+        document.getElementById("statistics").innerHTML += "<br>";
+
+        for (var i = 0, len = Object.keys(jsonObj.damage_taken).length; i < len; i++) {
+            var encounter = jsonObj.damage_taken[i];
+            var textnode = document.createTextNode("On floor " + encounter.floor + " You've encountered " + encounter.enemies + " it took You " + encounter.turns + " turns to kill them an you took " + encounter.damage + " damage.");
+            document.getElementById("statistics").appendChild(textnode);
+            document.getElementById("statistics").innerHTML += "<br>";
+        }
+
     };
   
     fileReader.readAsText(fileToLoad, "UTF-8");
