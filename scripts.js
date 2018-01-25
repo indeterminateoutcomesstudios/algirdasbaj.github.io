@@ -9,18 +9,18 @@ function readFile(){
 
         var char = jsonObj.character_chosen;
         if(char == "IRONCLAD"){
-            var textnode = document.createTextNode("You have started your journey as the Ironclad");
+            var textNode = document.createTextNode("You have started your journey as the Ironclad");
             var imgNode = document.createElement("img");
             imgNode.src = 'images/ironclad.png';
-            document.getElementById("statistics").appendChild(textnode);
+            document.getElementById("statistics").appendChild(textNode);
             document.getElementById("statistics").innerHTML += "<br>";
             document.getElementById("statistics").appendChild(imgNode);
             document.getElementById("statistics").innerHTML += "<br>";
         }else{
-            var textnode = document.createTextNode("You have started your journey as the Silent");
+            var textNode = document.createTextNode("You have started your journey as the Silent");
             var imgNode = document.createElement("img");
             imgNode.src = 'images/silent.png';
-            document.getElementById("statistics").appendChild(textnode);
+            document.getElementById("statistics").appendChild(textNode);
             document.getElementById("statistics").innerHTML += "<br>";
             document.getElementById("statistics").appendChild(imgNode);
             document.getElementById("statistics").innerHTML += "<br>";
