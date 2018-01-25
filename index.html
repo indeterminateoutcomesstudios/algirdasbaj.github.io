@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Slay the spire run visualiser</title>
+    <script src="scripts.js"></script>
+    <title>Slay the spire run visualiser</title>
 </head>
 <body>
-
-
+<div>
+    <center>
+        <p>
+            Select the run file you want to visualise:<br>
+            <input type="file" id="runFile" onchange="readFile()">
+        </p>
+        <div id="statistics" align="center"></div>
+    </center>
+</div>
 </body>
 </html>
